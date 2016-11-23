@@ -1,6 +1,6 @@
 # vue2-template
 use vue2+vuex+vue-router+vue-resource搭建的一个比较完整的开发流程
-#vue版ipad管家下单，遵循erp的react开发习惯，设计结构如下
+#vue版，遵循erp的react开发习惯，设计结构如下
 ### 目录结构
 
 ```
