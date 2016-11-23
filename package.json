@@ -1,7 +1,7 @@
 {
   "name": "xiejianwei",
   "version": "1.0.0",
-  "description": "新家生活ipad管家下单vue版",
+  "description": "vue2模板搭建",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.config.dev.js",
