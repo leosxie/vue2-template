@@ -1,0 +1,10 @@
+//登录的action定义
+export const LOGIN = 'LOGIN'
+export const LOGIN_SUCCESS = 'LOGIN_SUCCESS'
+export const LOGIN_FAILURE = 'LOGIN_FAILURE'
+export const LOGIN_PENDDING = 'LOGIN_PENDING'
+
+export const LOGINOUT = 'LOGINOUT'
+export const LOGINOUT_SUCCESS = 'LOGINOUT_SUCCESS'
+export const LOGINOUT_FAILURE = 'LOGINOUT_FAILURE'
+export const LOGINOUT_PENDDING = 'LOGINOUT_PENDING'
