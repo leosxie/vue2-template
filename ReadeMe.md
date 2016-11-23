@@ -24,9 +24,3 @@
 ├── webpack.config.dev.js    // 开发环境Webpack配置文件
 ├── webpack-config.prod.js   // 生产环境Webpack 配置文件
 ```
-#运行
-```
-npm install -g concurrently
-npm install
-npm start
-```

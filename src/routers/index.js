@@ -6,7 +6,6 @@ import Login from '../views/Login/index.vue';
 import User from '../views/User/index.vue';
 import {isLogin} from '../utils/auth.js'
 Vue.use(VueRouter);
-//个人比较倾向于配置路由
 const routes = [
     {
       path:'/login',"name":"login",component:Login,meta: {requiresAuth: false}, 
@@ -39,26 +38,26 @@ const routes = [
 const router = new VueRouter({
     mode: 'history',
     base: __dirname,
-    routes:routes,
+    routes:routes, // short for routes: routes
     linkActiveClass:'active',     //router-link的选中状态的class，也有一个默认的值
     history:true
 });
 router.beforeEach((to, from, next) => {
-    // 所有带有requiresAuth为true的都是要验证登录态的
   if (to.matched.some(record => record.meta.requiresAuth)) {
-    //验证是否通过了
-    console.log("是否登录了。。",isLogin())
+    // this route requires auth, check if logged in
+    // if not, redirect to login page.
+    console.log("是否登录了。。",isLogin());
     if (!isLogin()) {
         console.log("没有登录要进行跳转。。。");
       next({
         path: '/login',
-        query: { redirect: to.fullPath }
+        query: {redirect: to.fullPath}
       })
     } else {
-      next()
+      next();
     }
   } else {
-    next() // 确保一定要调用 next()
+    next(); // 确保一定要调用 next()
   }
-})
+});
 export default router;

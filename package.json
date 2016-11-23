@@ -8,11 +8,12 @@
     "prd": "set publish_env=production && webpack --config webpack.config.prd.js",
     "beta": "set publish_env=beta && webpack --config webpack.prd.js",
     "dev": "set publish_env=dev && webpack --config webpack.prd.js",
-    "start": "concurrently --kill-others \"npm run build & webpack-dev-server --host localhost --port 8089 --inline --hot  --config webpack.config.dev.js --content-base dev/\""
+    "start": "concurrently --kill-others \"npm run build & webpack-dev-server --host localhost --port 8089 --inline --hot --config webpack.config.dev.js --content-base dev/\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
     "axios": "^0.15.2",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
@@ -25,13 +26,18 @@
     "css-loader": "^0.26.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
     "html-res-webpack-plugin": "^1.1.3",
     "html-webpack-plugin": "^2.24.1",
     "moment": "^2.16.0",
     "postcss-loader": "^1.1.1",
+    "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "vue-hot-reload-api": "^2.0.6",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^10.0.0",
+    "vue-template-compiler": "^2.1.0",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.8.4",
     "webpack-dev-server": "^1.16.1"
@@ -40,14 +46,10 @@
     "axios": "^0.15.2",
     "react-cookie": "^0.4.8",
     "vue": "^2.0.7",
-    "vue-html-loader": "^1.2.3",
-    "vue-loader": "^9.9.5",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.0.2",
-    "vue-style-loader": "^1.0.0",
-    "vue-toast": "^2.0.3",
     "vue-validator": "^3.0.0-alpha.1",
     "vuex": "^2.0.0",
-    "vuex-router-sync": "^2.1.1"
+    "vuex-router-sync": "^3.0.0"
   }
 }

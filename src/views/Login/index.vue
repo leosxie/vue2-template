@@ -39,8 +39,8 @@ import { mapActions,mapState } from 'vuex'
                       if(state.login.action == "LOGIN_SUCCESS"){
                           console.log("登录成功。。。")
                           debugger
-                          console.log("mapState action");
-                          router.replace(this.$route.query.redirect || "/home");
+                          console.log("mapState action",this);
+                          router.replace(state.route.query.redirect || "/home");
                           //在这里可以对state进行改造。。。this.$data可以获取限制的$data的东西
                       }
                       return state.login.action;
