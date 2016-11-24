@@ -1,10 +1,12 @@
 # vue2-template
 use vue2+vuex+vue-router+vue-resource搭建的一个比较完整的开发流程
-#vue版，遵循erp的react开发习惯，设计结构如下
+#vue版，遵循react开发习惯，设计结构如下
 ### 目录结构
 
 ```
-├── README.md           
+├── README.md
+├───build                     //构建目录
+├───config                    //构建相关的配置目录
 ├── dev                      // 开发目录
 ├── src                      // 源文件目录
 ├── store   
@@ -23,7 +25,5 @@ use vue2+vuex+vue-router+vue-resource搭建的一个比较完整的开发流程
 └── routers               // 路由配置
 └── index.js             // 入口文件
 ├── .babelrc                 // babel配置
-├── webpack.config.dev.js    // 开发环境Webpack配置文件
-├── webpack-config.prod.js   // 生产环境Webpack 配置文件
 ```
-#todo整合官方vue-cli的热加载功能
+#todo整合mockapi功能
